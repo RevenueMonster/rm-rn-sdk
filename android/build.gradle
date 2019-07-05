@@ -2,6 +2,7 @@ buildscript {
     repositories {
         google()
         jcenter()
+        maven { url "https://jitpack.io" }
     }
 
     dependencies {
@@ -51,6 +52,7 @@ repositories {
 }
 
 dependencies {
+    implementation 'com.github.RevenueMonster:RM-Android:v0.1-beta.5'
     compile 'com.facebook.react:react-native:+'
 }
 
