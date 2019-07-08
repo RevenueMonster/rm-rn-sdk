@@ -3,6 +3,7 @@ package my.revenuemonster.reactlibrary;
 
 import android.widget.Toast;
 import android.support.annotation.Nullable;
+import com.revenuemonster.payment.Checkout;
 
 import com.facebook.react.bridge.Arguments;
 import com.facebook.react.bridge.ReactApplicationContext;
@@ -39,10 +40,15 @@ public class RevenueMonsterModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void checkout() {
+    public void triggerEvent(String name) {
         WritableMap params = Arguments.createMap();
-        params.putString("Name", "Revenue Monster");
+        params.putString("Name", name);
         sendEvent(reactContext, "rm:success", params);
+    }
+
+    @ReactMethod
+    public void checkout() {
+        new Checkout(get)
     }
 
     private void sendEvent(ReactContext reactContext, String eventName, @Nullable WritableMap params) {
