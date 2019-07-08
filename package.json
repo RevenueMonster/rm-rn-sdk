@@ -1,7 +1,7 @@
 {
-  "name": "react-native-revenue-monster",
-  "title": "React Native Revenue Monster",
-  "version": "1.0.0",
+  "name": "react-native-revenuemonster",
+  "title": "React Native Revenue Monster SDK",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,25 +9,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/github_account/react-native-revenue-monster.git",
-    "baseUrl": "https://github.com/github_account/react-native-revenue-monster"
+    "url": "git+https://github.com/RevenueMonster/react-native-revenuemonster.git",
+    "baseUrl": "https://github.com/RevenueMonster/react-native-revenuemonster"
   },
   "keywords": [
     "react-native"
   ],
   "author": {
-    "name": "Your Name",
-    "email": "yourname@email.com"
+    "name": "Gan Jun Kai",
+    "email": "junkai@revenuemonster.my"
   },
   "license": "Apache-2.0",
   "licenseFilename": "LICENSE",
-  "readmeFilename": "README.md",
-  "peerDependencies": {
-    "react": "^16.5.0",
-    "react-native": ">=0.57.0-rc.0 <1.0.x"
-  },
-  "devDependencies": {
-    "react": "^16.5.0",
-    "react-native": "^0.59.4"
-  }
+  "readmeFilename": "README.md"
 }

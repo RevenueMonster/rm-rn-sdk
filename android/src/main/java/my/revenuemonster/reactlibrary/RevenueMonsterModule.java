@@ -1,9 +1,17 @@
 package my.revenuemonster.reactlibrary;
 
+
+import android.widget.Toast;
+import android.support.annotation.Nullable;
+
+import com.facebook.react.bridge.Arguments;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
+import com.facebook.react.bridge.ReactContext;
 import com.facebook.react.bridge.ReactMethod;
+import com.facebook.react.bridge.WritableMap;
 import com.facebook.react.bridge.Callback;
+import com.facebook.react.modules.core.DeviceEventManagerModule;
 
 public class RevenueMonsterModule extends ReactContextBaseJavaModule {
 
@@ -23,5 +31,21 @@ public class RevenueMonsterModule extends ReactContextBaseJavaModule {
     public void sampleMethod(String stringArgument, int numberArgument, Callback callback) {
         // TODO: Implement some real useful functionality
         callback.invoke("Received numberArgument: " + numberArgument + " stringArgument: " + stringArgument);
+    }
+
+    @ReactMethod
+    public void show(String message) {
+        Toast.makeText(getReactApplicationContext(), message, Toast.LENGTH_LONG).show();
+    }
+
+    @ReactMethod
+    public void checkout() {
+        WritableMap params = Arguments.createMap();
+        params.putString("Name", "Revenue Monster");
+        sendEvent(reactContext, "rm:success", params);
+    }
+
+    private void sendEvent(ReactContext reactContext, String eventName, @Nullable WritableMap params) {
+        reactContext.getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class).emit(eventName, params);
     }
 }
