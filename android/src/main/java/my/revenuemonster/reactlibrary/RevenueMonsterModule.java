@@ -1,9 +1,15 @@
 package my.revenuemonster.reactlibrary;
 
-
+import android.app.Activity;
 import android.widget.Toast;
 import android.support.annotation.Nullable;
+
 import com.revenuemonster.payment.Checkout;
+
+import com.revenuemonster.payment.constant.Env;
+import com.revenuemonster.payment.constant.Method;
+import com.revenuemonster.payment.model.Error;
+import com.revenuemonster.payment.model.Transaction;
 
 import com.facebook.react.bridge.Arguments;
 import com.facebook.react.bridge.ReactApplicationContext;
@@ -47,8 +53,15 @@ public class RevenueMonsterModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void checkout() {
-        new Checkout(get)
+    public void checkout(String appID, String checkoutID) {
+        try {
+            Activity activity = getCurrentActivity();
+            new Checkout(activity.getApplication()).getInstance().
+                    setWeChatAppID(appID).setEnv(Env.SANDBOX).
+                    pay(Method.WECHATPAY_MY, checkoutID, new Result(this.reactContext));
+        } catch(Exception e) {
+            e.printStackTrace();
+        }
     }
 
     private void sendEvent(ReactContext reactContext, String eventName, @Nullable WritableMap params) {
