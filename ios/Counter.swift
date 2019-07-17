@@ -15,4 +15,10 @@ class Counter: NSObject {
     func constantsToExport() -> [AnyHashable: Any]! {
         return ["initialCount": 0]
     }
+    
+    @objc
+    func increment() {
+        var count = 1
+        print("count is \(count)")
+    }
 }

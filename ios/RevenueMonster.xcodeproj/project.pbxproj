@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D8A0D5A22DEBE5F0032B500 /* CounterBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8A0D5922DEBE5F0032B500 /* CounterBridge.m */; };
 		2D9FFC6022DD8ECA00ACB47A /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9FFC5F22DD8ECA00ACB47A /* Counter.swift */; };
-		2D9FFC6222DD8F3600ACB47A /* Counter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9FFC6122DD8F3600ACB47A /* Counter.m */; };
 		B3E7B58A1CC2AC0600A0062D /* RevenueMonster.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RevenueMonster.m */; };
 /* End PBXBuildFile section */
 
@@ -26,9 +26,9 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libRevenueMonster.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRevenueMonster.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D8A0D5922DEBE5F0032B500 /* CounterBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CounterBridge.m; sourceTree = "<group>"; };
 		2D9FFC5E22DD8EC900ACB47A /* RevenueMonster-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RevenueMonster-Bridging-Header.h"; sourceTree = "<group>"; };
 		2D9FFC5F22DD8ECA00ACB47A /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
-		2D9FFC6122DD8F3600ACB47A /* Counter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Counter.m; sourceTree = "<group>"; };
 		B3E7B5881CC2AC0600A0062D /* RevenueMonster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RevenueMonster.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* RevenueMonster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RevenueMonster.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -55,7 +55,7 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-				2D9FFC6122DD8F3600ACB47A /* Counter.m */,
+				2D8A0D5922DEBE5F0032B500 /* CounterBridge.m */,
 				2D9FFC5F22DD8ECA00ACB47A /* Counter.swift */,
 				B3E7B5881CC2AC0600A0062D /* RevenueMonster.h */,
 				B3E7B5891CC2AC0600A0062D /* RevenueMonster.m */,
@@ -123,8 +123,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D9FFC6022DD8ECA00ACB47A /* Counter.swift in Sources */,
-				2D9FFC6222DD8F3600ACB47A /* Counter.m in Sources */,
 				B3E7B58A1CC2AC0600A0062D /* RevenueMonster.m in Sources */,
+				2D8A0D5A22DEBE5F0032B500 /* CounterBridge.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
