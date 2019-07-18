@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1DB973CA8A877BCDB253441E /* Pods_RevenueMonster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4C8F754F4B0DF3C61850505 /* Pods_RevenueMonster.framework */; };
+		2DCEB02222E0556300FB2364 /* RevenueMonster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCEB02122E0556300FB2364 /* RevenueMonster.swift */; };
 		B3E7B58A1CC2AC0600A0062D /* RevenueMonster.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RevenueMonster.m */; };
 /* End PBXBuildFile section */
 
@@ -24,8 +26,13 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libRevenueMonster.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRevenueMonster.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DCEB02022E0556300FB2364 /* RevenueMonster-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RevenueMonster-Bridging-Header.h"; sourceTree = "<group>"; };
+		2DCEB02122E0556300FB2364 /* RevenueMonster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevenueMonster.swift; sourceTree = "<group>"; };
+		50DCD20EC9DBF7FC3E1B6609 /* Pods-RevenueMonster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RevenueMonster.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RevenueMonster/Pods-RevenueMonster.debug.xcconfig"; sourceTree = "<group>"; };
+		759B12032ADED60352C17EFA /* Pods-RevenueMonster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RevenueMonster.release.xcconfig"; path = "Pods/Target Support Files/Pods-RevenueMonster/Pods-RevenueMonster.release.xcconfig"; sourceTree = "<group>"; };
 		B3E7B5881CC2AC0600A0062D /* RevenueMonster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RevenueMonster.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* RevenueMonster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RevenueMonster.m; sourceTree = "<group>"; };
+		D4C8F754F4B0DF3C61850505 /* Pods_RevenueMonster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RevenueMonster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DB973CA8A877BCDB253441E /* Pods_RevenueMonster.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,13 +55,34 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		1C1080EBEEFB8E1C2968FABA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4C8F754F4B0DF3C61850505 /* Pods_RevenueMonster.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
+				2DCEB02122E0556300FB2364 /* RevenueMonster.swift */,
 				B3E7B5881CC2AC0600A0062D /* RevenueMonster.h */,
 				B3E7B5891CC2AC0600A0062D /* RevenueMonster.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
+				BC9AECDA9F5BF9A1E8D1BC96 /* Pods */,
+				1C1080EBEEFB8E1C2968FABA /* Frameworks */,
+				2DCEB02022E0556300FB2364 /* RevenueMonster-Bridging-Header.h */,
 			);
+			sourceTree = "<group>";
+		};
+		BC9AECDA9F5BF9A1E8D1BC96 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				50DCD20EC9DBF7FC3E1B6609 /* Pods-RevenueMonster.debug.xcconfig */,
+				759B12032ADED60352C17EFA /* Pods-RevenueMonster.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -63,6 +92,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "RevenueMonster" */;
 			buildPhases = (
+				B018867F367E3572701B8E2E /* [CP] Check Pods Manifest.lock */,
 				58B511D71A9E6C8500147676 /* Sources */,
 				58B511D81A9E6C8500147676 /* Frameworks */,
 				58B511D91A9E6C8500147676 /* CopyFiles */,
@@ -109,12 +139,34 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B018867F367E3572701B8E2E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RevenueMonster-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		58B511D71A9E6C8500147676 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B3E7B58A1CC2AC0600A0062D /* RevenueMonster.m in Sources */,
+				2DCEB02222E0556300FB2364 /* RevenueMonster.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +268,7 @@
 		};
 		58B511F01A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50DCD20EC9DBF7FC3E1B6609 /* Pods-RevenueMonster.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				HEADER_SEARCH_PATHS = (
@@ -226,9 +279,10 @@
 				);
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				OTHER_LDFLAGS = "";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = RevenueMonster;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "RevenueMonster-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
@@ -236,6 +290,7 @@
 		};
 		58B511F11A9E6C8500147676 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 759B12032ADED60352C17EFA /* Pods-RevenueMonster.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				HEADER_SEARCH_PATHS = (
@@ -246,9 +301,10 @@
 				);
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				OTHER_LDFLAGS = "";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = RevenueMonster;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "RevenueMonster-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
