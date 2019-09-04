@@ -6,6 +6,6 @@ target 'RevenueMonster' do
   use_frameworks!
 
   # Pods for RevenueMonster
-  pod 'RevenueMonster', '0.1-beta.3'
+  pod 'RevenueMonster', '0.1-beta.4'
 
 end

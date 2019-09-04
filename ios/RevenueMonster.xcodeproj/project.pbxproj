@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1DB973CA8A877BCDB253441E /* Pods_RevenueMonster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4C8F754F4B0DF3C61850505 /* Pods_RevenueMonster.framework */; };
-		2DCEB02222E0556300FB2364 /* RevenueMonster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCEB02122E0556300FB2364 /* RevenueMonster.swift */; };
-		B3E7B58A1CC2AC0600A0062D /* RevenueMonster.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RevenueMonster.m */; };
+		2D72E7DD22E9A7DA00DCD8C2 /* RevenueMonster-Bridging-Header.h in Sources */ = {isa = PBXBuildFile; fileRef = 2DB85E1322E6C60F0041E8EE /* RevenueMonster-Bridging-Header.h */; };
+		2DB85E1522E6C60F0041E8EE /* RevenueMonster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB85E1422E6C60F0041E8EE /* RevenueMonster.swift */; };
+		2DB85E1822E6C6570041E8EE /* RevenueMonsterBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DB85E1722E6C6570041E8EE /* RevenueMonsterBridge.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,12 +27,11 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libRevenueMonster.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRevenueMonster.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		2DCEB02022E0556300FB2364 /* RevenueMonster-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RevenueMonster-Bridging-Header.h"; sourceTree = "<group>"; };
-		2DCEB02122E0556300FB2364 /* RevenueMonster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevenueMonster.swift; sourceTree = "<group>"; };
+		2DB85E1322E6C60F0041E8EE /* RevenueMonster-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RevenueMonster-Bridging-Header.h"; sourceTree = "<group>"; };
+		2DB85E1422E6C60F0041E8EE /* RevenueMonster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevenueMonster.swift; sourceTree = "<group>"; };
+		2DB85E1722E6C6570041E8EE /* RevenueMonsterBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RevenueMonsterBridge.m; sourceTree = "<group>"; };
 		50DCD20EC9DBF7FC3E1B6609 /* Pods-RevenueMonster.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RevenueMonster.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RevenueMonster/Pods-RevenueMonster.debug.xcconfig"; sourceTree = "<group>"; };
 		759B12032ADED60352C17EFA /* Pods-RevenueMonster.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RevenueMonster.release.xcconfig"; path = "Pods/Target Support Files/Pods-RevenueMonster/Pods-RevenueMonster.release.xcconfig"; sourceTree = "<group>"; };
-		B3E7B5881CC2AC0600A0062D /* RevenueMonster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RevenueMonster.h; sourceTree = "<group>"; };
-		B3E7B5891CC2AC0600A0062D /* RevenueMonster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RevenueMonster.m; sourceTree = "<group>"; };
 		D4C8F754F4B0DF3C61850505 /* Pods_RevenueMonster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RevenueMonster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -63,16 +63,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		2DB85E1622E6C63B0041E8EE /* RevenueMonster */ = {
+			isa = PBXGroup;
+			children = (
+				2DB85E1322E6C60F0041E8EE /* RevenueMonster-Bridging-Header.h */,
+				2DB85E1422E6C60F0041E8EE /* RevenueMonster.swift */,
+				2DB85E1722E6C6570041E8EE /* RevenueMonsterBridge.m */,
+			);
+			path = RevenueMonster;
+			sourceTree = "<group>";
+		};
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-				2DCEB02122E0556300FB2364 /* RevenueMonster.swift */,
-				B3E7B5881CC2AC0600A0062D /* RevenueMonster.h */,
-				B3E7B5891CC2AC0600A0062D /* RevenueMonster.m */,
+				2DB85E1622E6C63B0041E8EE /* RevenueMonster */,
 				134814211AA4EA7D00B7C361 /* Products */,
 				BC9AECDA9F5BF9A1E8D1BC96 /* Pods */,
 				1C1080EBEEFB8E1C2968FABA /* Frameworks */,
-				2DCEB02022E0556300FB2364 /* RevenueMonster-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,7 +124,7 @@
 				TargetAttributes = {
 					58B511DA1A9E6C8500147676 = {
 						CreatedOnToolsVersion = 6.1.1;
-						LastSwiftMigration = 1020;
+						LastSwiftMigration = 1030;
 					};
 				};
 			};
@@ -165,8 +172,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3E7B58A1CC2AC0600A0062D /* RevenueMonster.m in Sources */,
-				2DCEB02222E0556300FB2364 /* RevenueMonster.swift in Sources */,
+				2D72E7DD22E9A7DA00DCD8C2 /* RevenueMonster-Bridging-Header.h in Sources */,
+				2DB85E1822E6C6570041E8EE /* RevenueMonsterBridge.m in Sources */,
+				2DB85E1522E6C60F0041E8EE /* RevenueMonster.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,10 +286,21 @@
 					"$(SRCROOT)/../../react-native/React/**",
 				);
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				OTHER_LDFLAGS = "-ObjC";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../React/**",
+					"$(SRCROOT)/node_modules/react-native/React/**",
+					"$(SRCROOT)/../react-native/React/**",
+					"$(SRCROOT)/../../../node_modules/react-native/React/**",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = RevenueMonster;
 				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "RevenueMonster-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -300,10 +319,21 @@
 					"$(SRCROOT)/../../react-native/React/**",
 				);
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				OTHER_LDFLAGS = "-ObjC";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/../../React/**",
+					"$(SRCROOT)/node_modules/react-native/React/**",
+					"$(SRCROOT)/../react-native/React/**",
+					"$(SRCROOT)/../../../node_modules/react-native/React/**",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = RevenueMonster;
 				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "RevenueMonster-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
